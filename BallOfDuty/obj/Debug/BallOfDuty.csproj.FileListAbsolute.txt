@@ -1,0 +1,9 @@
+c:\users\cmarsala\documents\visual studio 2012\Projects\BallOfDuty\BallOfDuty\bin\Debug\BallOfDuty.exe.config
+c:\users\cmarsala\documents\visual studio 2012\Projects\BallOfDuty\BallOfDuty\bin\Debug\BallOfDuty.exe
+c:\users\cmarsala\documents\visual studio 2012\Projects\BallOfDuty\BallOfDuty\bin\Debug\BallOfDuty.pdb
+c:\users\cmarsala\documents\visual studio 2012\Projects\BallOfDuty\BallOfDuty\obj\Debug\BallOfDuty.csprojResolveAssemblyReference.cache
+c:\users\cmarsala\documents\visual studio 2012\Projects\BallOfDuty\BallOfDuty\obj\Debug\BallOfDuty.MainMenu.resources
+c:\users\cmarsala\documents\visual studio 2012\Projects\BallOfDuty\BallOfDuty\obj\Debug\BallOfDuty.Properties.Resources.resources
+c:\users\cmarsala\documents\visual studio 2012\Projects\BallOfDuty\BallOfDuty\obj\Debug\BallOfDuty.csproj.GenerateResource.Cache
+c:\users\cmarsala\documents\visual studio 2012\Projects\BallOfDuty\BallOfDuty\obj\Debug\BallOfDuty.exe
+c:\users\cmarsala\documents\visual studio 2012\Projects\BallOfDuty\BallOfDuty\obj\Debug\BallOfDuty.pdb
