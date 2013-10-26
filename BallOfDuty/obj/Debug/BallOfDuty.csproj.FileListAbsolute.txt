@@ -7,3 +7,6 @@ c:\users\cmarsala\documents\visual studio 2012\Projects\BallOfDuty\BallOfDuty\ob
 c:\users\cmarsala\documents\visual studio 2012\Projects\BallOfDuty\BallOfDuty\obj\Debug\BallOfDuty.csproj.GenerateResource.Cache
 c:\users\cmarsala\documents\visual studio 2012\Projects\BallOfDuty\BallOfDuty\obj\Debug\BallOfDuty.exe
 c:\users\cmarsala\documents\visual studio 2012\Projects\BallOfDuty\BallOfDuty\obj\Debug\BallOfDuty.pdb
+C:\Users\cmarsala\Documents\BitBucket\BallOfDuty\bin\Debug\BallOfDuty.exe.config
+C:\Users\cmarsala\Documents\BitBucket\BallOfDuty\obj\Debug\BallOfDuty.exe
+C:\Users\cmarsala\Documents\BitBucket\BallOfDuty\obj\Debug\BallOfDuty.pdb
