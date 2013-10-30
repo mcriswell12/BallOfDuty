@@ -29,41 +29,13 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenu));
-            this.startGame = new System.Windows.Forms.Button();
-            this.viewHighScores = new System.Windows.Forms.Button();
-            this.exitGame = new System.Windows.Forms.Button();
             this.title = new System.Windows.Forms.Label();
             this.title2 = new System.Windows.Forms.Label();
+            this.exitGame = new System.Windows.Forms.Button();
+            this.viewHighScores = new System.Windows.Forms.Button();
+            this.startGame = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
-            // 
-            // startGame
-            // 
-            this.startGame.Location = new System.Drawing.Point(374, 261);
-            this.startGame.Name = "startGame";
-            this.startGame.Size = new System.Drawing.Size(109, 31);
-            this.startGame.TabIndex = 0;
-            this.startGame.Text = "Play Game!";
-            this.startGame.UseVisualStyleBackColor = true;
-            // 
-            // viewHighScores
-            // 
-            this.viewHighScores.Location = new System.Drawing.Point(365, 300);
-            this.viewHighScores.Name = "viewHighScores";
-            this.viewHighScores.Size = new System.Drawing.Size(126, 38);
-            this.viewHighScores.TabIndex = 1;
-            this.viewHighScores.Text = "View HighScores";
-            this.viewHighScores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.viewHighScores.UseVisualStyleBackColor = true;
-            // 
-            // exitGame
-            // 
-            this.exitGame.Location = new System.Drawing.Point(374, 344);
-            this.exitGame.Name = "exitGame";
-            this.exitGame.Size = new System.Drawing.Size(109, 30);
-            this.exitGame.TabIndex = 2;
-            this.exitGame.Text = "Exit Game";
-            this.exitGame.UseVisualStyleBackColor = true;
-            this.exitGame.Click += new System.EventHandler(this.exitGame_Click);
             // 
             // title
             // 
@@ -81,17 +53,56 @@
             this.title2.Size = new System.Drawing.Size(636, 75);
             this.title2.TabIndex = 4;
             // 
+            // exitGame
+            // 
+            this.exitGame.Location = new System.Drawing.Point(370, 377);
+            this.exitGame.Name = "exitGame";
+            this.exitGame.Size = new System.Drawing.Size(109, 30);
+            this.exitGame.TabIndex = 8;
+            this.exitGame.Text = "Exit Game";
+            this.exitGame.UseVisualStyleBackColor = true;
+            // 
+            // viewHighScores
+            // 
+            this.viewHighScores.Location = new System.Drawing.Point(361, 333);
+            this.viewHighScores.Name = "viewHighScores";
+            this.viewHighScores.Size = new System.Drawing.Size(126, 38);
+            this.viewHighScores.TabIndex = 7;
+            this.viewHighScores.Text = "View HighScores";
+            this.viewHighScores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.viewHighScores.UseVisualStyleBackColor = true;
+            this.viewHighScores.Click += new System.EventHandler(this.viewHighScores_Click);
+            // 
+            // startGame
+            // 
+            this.startGame.Location = new System.Drawing.Point(370, 294);
+            this.startGame.Name = "startGame";
+            this.startGame.Size = new System.Drawing.Size(109, 31);
+            this.startGame.TabIndex = 6;
+            this.startGame.Text = "Play Game!";
+            this.startGame.UseVisualStyleBackColor = true;
+            // 
+            // panel1
+            // 
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(857, 541);
+            this.panel1.TabIndex = 9;
+            this.panel1.Visible = false;
+            // 
             // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.ClientSize = new System.Drawing.Size(857, 541);
-            this.Controls.Add(this.title2);
-            this.Controls.Add(this.title);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.exitGame);
             this.Controls.Add(this.viewHighScores);
             this.Controls.Add(this.startGame);
+            this.Controls.Add(this.title);
+            this.Controls.Add(this.title2);
             this.Name = "MainMenu";
             this.Text = "Main";
             this.ResumeLayout(false);
@@ -100,11 +111,12 @@
 
         #endregion
 
-        private System.Windows.Forms.Button startGame;
-        private System.Windows.Forms.Button viewHighScores;
-        private System.Windows.Forms.Button exitGame;
         private System.Windows.Forms.Label title;
         private System.Windows.Forms.Label title2;
+        private System.Windows.Forms.Button exitGame;
+        private System.Windows.Forms.Button viewHighScores;
+        private System.Windows.Forms.Button startGame;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 

@@ -16,3 +16,4 @@ C:\Users\cmarsala\Documents\BitBucket\BallOfDuty\obj\Debug\BallOfDuty.csprojReso
 C:\Users\cmarsala\Documents\BitBucket\BallOfDuty\obj\Debug\BallOfDuty.MainMenu.resources
 C:\Users\cmarsala\Documents\BitBucket\BallOfDuty\obj\Debug\BallOfDuty.Properties.Resources.resources
 C:\Users\cmarsala\Documents\BitBucket\BallOfDuty\obj\Debug\BallOfDuty.csproj.GenerateResource.Cache
+C:\Users\cmarsala\Documents\BitBucket\BallOfDuty\obj\Debug\BallOfDuty.HighScoresWindow.resources

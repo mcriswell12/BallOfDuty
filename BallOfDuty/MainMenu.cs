@@ -21,5 +21,16 @@ namespace BallOfDuty
         {
             this.Close();
         }
+
+        private void viewHighScores_Click(object sender, EventArgs e)
+        {
+            panel1.Controls.Clear();
+            panel1.Visible = true;
+            HighScoresWindow usr1 = new HighScoresWindow();
+            usr1.Show();
+            panel1.Controls.Add(usr1);
+        }
+
+        
     }
 }
