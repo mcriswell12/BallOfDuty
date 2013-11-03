@@ -61,6 +61,7 @@
             this.exitGame.TabIndex = 8;
             this.exitGame.Text = "Exit Game";
             this.exitGame.UseVisualStyleBackColor = true;
+            this.exitGame.Click += new System.EventHandler(this.exitGame_Click);
             // 
             // viewHighScores
             // 
@@ -116,7 +117,7 @@
         private System.Windows.Forms.Button exitGame;
         private System.Windows.Forms.Button viewHighScores;
         private System.Windows.Forms.Button startGame;
-        private System.Windows.Forms.Panel panel1;
+        protected System.Windows.Forms.Panel panel1;
     }
 }
 

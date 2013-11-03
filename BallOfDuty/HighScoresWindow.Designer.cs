@@ -28,7 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HighScoresWindow));
             this.menuButton = new System.Windows.Forms.Button();
+            this.highScoresBox = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // menuButton
@@ -41,19 +44,44 @@
             this.menuButton.UseVisualStyleBackColor = true;
             this.menuButton.Click += new System.EventHandler(this.menuButton_Click);
             // 
+            // highScoresBox
+            // 
+            this.highScoresBox.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.highScoresBox.ForeColor = System.Drawing.SystemColors.Menu;
+            this.highScoresBox.Location = new System.Drawing.Point(220, 114);
+            this.highScoresBox.Multiline = true;
+            this.highScoresBox.Name = "highScoresBox";
+            this.highScoresBox.ReadOnly = true;
+            this.highScoresBox.Size = new System.Drawing.Size(427, 304);
+            this.highScoresBox.TabIndex = 1;
+            this.highScoresBox.Text = HighScoreTable.displayScores();
+            // 
+            // label1
+            // 
+            this.label1.Image = ((System.Drawing.Image)(resources.GetObject("label1.Image")));
+            this.label1.Location = new System.Drawing.Point(175, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(521, 111);
+            this.label1.TabIndex = 2;
+            // 
             // HighScoresWindow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.highScoresBox);
             this.Controls.Add(this.menuButton);
             this.Name = "HighScoresWindow";
             this.Size = new System.Drawing.Size(857, 541);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Button menuButton;
+        private System.Windows.Forms.TextBox highScoresBox;
+        private System.Windows.Forms.Label label1;
     }
 }

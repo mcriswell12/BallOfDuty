@@ -11,8 +11,7 @@ namespace BallOfDuty
 {
     public partial class HighScoresWindow : UserControl
     {
-        internal MainMenu Parent { get; set; }
-
+        
         public HighScoresWindow()
         {
             InitializeComponent();
@@ -20,7 +19,11 @@ namespace BallOfDuty
 
         private void menuButton_Click(object sender, EventArgs e)
         {
+            ((Panel)this.Parent).Visible = false;
+            ((Panel)this.Parent).Controls.Remove(this);
             
         }
+
+        
     }
 }

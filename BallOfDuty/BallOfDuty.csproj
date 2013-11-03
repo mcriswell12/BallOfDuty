@@ -50,12 +50,19 @@
   <ItemGroup>
     <Compile Include="Ball.cs" />
     <Compile Include="Brick.cs" />
+    <Compile Include="GameWindow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GameWindow.Designer.cs">
+      <DependentUpon>GameWindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="HighScoresWindow.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="HighScoresWindow.Designer.cs">
       <DependentUpon>HighScoresWindow.cs</DependentUpon>
     </Compile>
+    <Compile Include="HighScoreTable.cs" />
     <Compile Include="MainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +73,9 @@
     <Compile Include="PowerUp.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GameWindow.resx">
+      <DependentUpon>GameWindow.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HighScoresWindow.resx">
       <DependentUpon>HighScoresWindow.cs</DependentUpon>
     </EmbeddedResource>
@@ -96,6 +106,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\HighScoreImg.png" />
     <Content Include="Images\TitleTop.png" />
     <Content Include="Images\TitleBot.png" />
   </ItemGroup>
