@@ -31,8 +31,28 @@ namespace BallOfDuty
     {
         public static List<HighScore> highScores;
 
+        public static void saveHighScores(HighScore hs)
+        {
+            loadHighScores();
+            if (highScores.Count == 10)
+            {
+                highScores.Sort();
+                if (highScores[9].Score <= hs.Score)
+                    highScores[9] = hs;
+            }
+            else
+                highScores.Add(hs);
+            
+            using (var fileStream = new FileStream(@"scores.dat", FileMode.Create, FileAccess.Write))
+            {
+                var formatter = new BinaryFormatter();
+                formatter.Serialize(fileStream, highScores);
+            }
+        }
+
         public static void saveHighScores()
         {
+
             using (var fileStream = new FileStream(@"scores.dat", FileMode.Create, FileAccess.Write))
             {
                 var formatter = new BinaryFormatter();
@@ -42,10 +62,17 @@ namespace BallOfDuty
 
         public static void loadHighScores()
         {
-            using (var fileStream = new FileStream(@"scores.dat", FileMode.Open, FileAccess.Read))
+            try
             {
-                var formatter = new BinaryFormatter();
-                highScores = (List<HighScore>)formatter.Deserialize(fileStream);
+                using (var fileStream = new FileStream(@"scores.dat", FileMode.Open, FileAccess.Read))
+                {
+                    var formatter = new BinaryFormatter();
+                    highScores = (List<HighScore>)formatter.Deserialize(fileStream);
+                }
+            }
+            catch (Exception)
+            {
+                generateHighScores();
             }
         }
 
@@ -55,18 +82,17 @@ namespace BallOfDuty
         {
             highScores = new List<HighScore>()
             {
-                new HighScore { PlayerName = "Helen", Score = 1000 },
-                new HighScore { PlayerName = "Christophe", Score = 2000 },
-                new HighScore { PlayerName = "Ruben", Score = 3000 },
-                new HighScore { PlayerName = "John", Score = 4000 },
-                new HighScore { PlayerName = "The Last Starfighter", Score = 5000 }
+                new HighScore { PlayerName = "Helen", Score = 10 },
+                new HighScore { PlayerName = "Christophe", Score = 20 },
+                new HighScore { PlayerName = "Ruben", Score = 20 },
+                new HighScore { PlayerName = "John", Score = 40 },
+                new HighScore { PlayerName = "The Last Starfighter", Score = 50 }
             };
+            saveHighScores();
         }
 
         public static string displayScores()
         {
-            generateHighScores();
-            saveHighScores();
             loadHighScores();
             highScores.Sort();
             string result = "";

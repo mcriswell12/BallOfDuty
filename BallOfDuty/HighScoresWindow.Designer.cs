@@ -36,30 +36,31 @@
             // 
             // menuButton
             // 
-            this.menuButton.Location = new System.Drawing.Point(290, 424);
+            this.menuButton.AutoSize = true;
+            this.menuButton.Image = ((System.Drawing.Image)(resources.GetObject("menuButton.Image")));
+            this.menuButton.Location = new System.Drawing.Point(386, 386);
             this.menuButton.Name = "menuButton";
-            this.menuButton.Size = new System.Drawing.Size(260, 23);
+            this.menuButton.Size = new System.Drawing.Size(356, 61);
             this.menuButton.TabIndex = 0;
-            this.menuButton.Text = "Back to Main Menu";
             this.menuButton.UseVisualStyleBackColor = true;
             this.menuButton.Click += new System.EventHandler(this.menuButton_Click);
             // 
             // highScoresBox
             // 
-            this.highScoresBox.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.highScoresBox.BackColor = System.Drawing.SystemColors.GrayText;
             this.highScoresBox.ForeColor = System.Drawing.SystemColors.Menu;
-            this.highScoresBox.Location = new System.Drawing.Point(220, 114);
+            this.highScoresBox.Location = new System.Drawing.Point(362, 143);
             this.highScoresBox.Multiline = true;
             this.highScoresBox.Name = "highScoresBox";
             this.highScoresBox.ReadOnly = true;
-            this.highScoresBox.Size = new System.Drawing.Size(427, 304);
+            this.highScoresBox.Size = new System.Drawing.Size(427, 189);
             this.highScoresBox.TabIndex = 1;
             this.highScoresBox.Text = HighScoreTable.displayScores();
             // 
             // label1
             // 
             this.label1.Image = ((System.Drawing.Image)(resources.GetObject("label1.Image")));
-            this.label1.Location = new System.Drawing.Point(175, 0);
+            this.label1.Location = new System.Drawing.Point(316, 28);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(521, 111);
             this.label1.TabIndex = 2;
@@ -72,7 +73,7 @@
             this.Controls.Add(this.highScoresBox);
             this.Controls.Add(this.menuButton);
             this.Name = "HighScoresWindow";
-            this.Size = new System.Drawing.Size(857, 541);
+            this.Size = new System.Drawing.Size(1121, 618);
             this.ResumeLayout(false);
             this.PerformLayout();
 

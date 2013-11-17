@@ -14,18 +14,18 @@ namespace BallOfDuty
         private int brickHits;
         private int xPos;
         private int yPos;
-        private Color color;
+        private Image image;
 
-        public Brick(int hei, int wid, int bH, int x, int y, Color color)
+        public Brick(int x, int y, Image image)
         {
-            this.height = hei;
-            this.width = wid;
-            this.brickHits = bH;
+            this.height = 50;
+            this.width = 100;
+            this.brickHits = 1;
             this.xPos = x;
             this.yPos = y;
-            this.color = color;
+            //this.color = color;
+            this.image = image;
         }
-
         public int Height
         {
             get { return height; }
@@ -56,25 +56,20 @@ namespace BallOfDuty
             set { yPos = value; }
         }
 
-        public void hit()
+        public bool hit(int ballX, int ballY, int ballSize)
         {
-            brickHits = brickHits - 1;
-            if (brickHits == 0)
+            if (ballX + ballSize >= xPos && ballX - ballSize <= (xPos + width) && ballY - ballSize <= (yPos + height) && ballY + ballSize >= yPos)
             {
-                brickDestroyed();
+                brickHits = brickHits - 1;
+                return true;                
             }
-        }
-
-        public void brickDestroyed()
-        {
-            height = 0;
-            width = 0;
+            return false;
         }
 
         public void paint(Graphics g)
         {
-            Brush b = new SolidBrush(color);
-            g.FillRectangle(b, xPos, yPos, width, height);
+            Rectangle r = new Rectangle(xPos, yPos, width, height);
+            g.DrawImage(image, r);
         }
     }
 }

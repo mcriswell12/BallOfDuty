@@ -31,6 +31,28 @@ namespace BallOfDuty
             panel1.Controls.Add(usr1);
         }
 
+        private void startGame_Click(object sender, EventArgs e)
+        {
+            GameWindow usr2 = new GameWindow(this);
+            usr2.FormClosed += new FormClosedEventHandler(this.GameOver);
+            usr2.Show();
+            
+        }
+
+        public void GameOver(object sender, FormClosedEventArgs e)
+        {
+            panel1.Controls.Clear();
+            panel1.Visible = true;
+            HighScoresWindow usr1 = new HighScoresWindow();
+            usr1.Show();
+            panel1.Controls.Add(usr1);
+            
+        }
+
         
+
+        
+
+
     }
 }
