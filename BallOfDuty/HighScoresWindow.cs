@@ -6,6 +6,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Media;
 
 namespace BallOfDuty
 {
@@ -14,6 +15,10 @@ namespace BallOfDuty
         
         public HighScoresWindow()
         {
+            using (var soundPlayer = new SoundPlayer(@".\\Images\\highscores.wav"))
+            {
+                soundPlayer.Play();
+            }
             InitializeComponent();
         }
 
@@ -21,6 +26,10 @@ namespace BallOfDuty
         {
             ((Panel)this.Parent).Visible = false;
             ((Panel)this.Parent).Controls.Remove(this);
+            using (var soundPlayer = new SoundPlayer(@".\\Images\\title.wav"))
+            {
+                soundPlayer.Play();
+            }
             
         }
 

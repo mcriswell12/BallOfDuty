@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,6 +16,10 @@ namespace BallOfDuty
         public MainMenu()
         {
             InitializeComponent();
+            using (var soundPlayer = new SoundPlayer(@".\\Images\\title.wav"))
+            {
+                soundPlayer.Play();
+            }
         }
 
         private void exitGame_Click(object sender, EventArgs e)

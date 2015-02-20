@@ -73,7 +73,7 @@
             this.Controls.Add(this.highScoresBox);
             this.Controls.Add(this.menuButton);
             this.Name = "HighScoresWindow";
-            this.Size = new System.Drawing.Size(1121, 618);
+            this.Size = new System.Drawing.Size(1200, 681);
             this.ResumeLayout(false);
             this.PerformLayout();
 
